@@ -21,10 +21,16 @@ h1 {
 
 .score-buttons button {
   padding: 10px 15px;
-  font-size: 16px;
+  font-size: 16px; /* 숫자가 기본적으로 보이게 */
   cursor: pointer;
   border: 1px solid #ccc;
   background-color: #f8f8f8;
+  color: black; /* 항상 숫자가 보이도록 기본 색상 설정 */
+  margin: 0 10px; /* 버튼 사이의 간격 설정 (양 옆에 10px 간격) */
+}
+
+.score-buttons button:hover {
+  background-color: #e0e0e0; /* 마우스를 올렸을 때의 스타일을 살짝 변경 */
 }
 
 .score-buttons button.active {
